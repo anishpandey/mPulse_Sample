@@ -1,3 +1,26 @@
-PODFILE CHECKSUM: efda4665998ae06aad78d6bd39d7e509a3523272
+PODS:
+  - JSONModel (1.8.0)
+  - mPulse (2.6.0)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+
+DEPENDENCIES:
+  - JSONModel
+  - mPulse
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JSONModel
+    - mPulse
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  mPulse: b0e5296ab5a6a33025ac8f7f05530dd91c15276f
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+
+PODFILE CHECKSUM: 2984e993e8ac5ac838e2f489186a593a37695c5a
 
 COCOAPODS: 1.6.0

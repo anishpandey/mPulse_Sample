@@ -1,5 +1,10 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/JSONModel" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/mPulse"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/mPulse/mPulse.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/mPulse"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_CONFIGURATION_BUILD_DIR}/JSONModel/JSONModel.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/mPulse/mPulse.framework/Headers" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/JSONModel" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/mPulse"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"mPulseDevice" -l"mPulseSim" -l"z" -framework "CoreLocation" -framework "CoreTelephony" -framework "ImageIO" -framework "JSONModel" -framework "SDWebImage" -framework "SystemConfiguration" -framework "mPulse"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
